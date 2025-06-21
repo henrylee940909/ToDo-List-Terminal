@@ -35,8 +35,18 @@ g++ -std=c++17 -O2 -Wall -o todo todo_list.cpp
 
 ```
 .
-└── todo_list.cpp     # Main application source file
+├── todo_list.cpp     # Main application source file
+├── README.md         # Project overview and instructions
+└── report.pdf        # Full project report (PDF)
 ```
+
+---
+
+## Report
+
+The complete HW1 project report is available here:
+
+* [report.pdf](./report.pdf)
 
 ---
 
@@ -48,4 +58,4 @@ g++ -std=c++17 -O2 -Wall -o todo todo_list.cpp
 
 ---
 
-*This repository contains academic homework code for learning purposes.*
+*This repository contains academic homework code and documentation for learning purposes.*
