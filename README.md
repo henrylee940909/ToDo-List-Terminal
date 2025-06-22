@@ -1,6 +1,21 @@
-# ToDo-List-Terminal
+# ToDo-List-CLI
 
-A terminal-based to-do list application implemented in **C++17** for NYCU’s Object-Oriented Programming and Data Structures course (HW1). It provides complete task management features, including sorting, filtering, deadline alerts, undo/redo, and password protection.
+A CLI-based to-do list application implemented in **C++17** for NYCU’s Object-Oriented Programming and Data Structures course (HW1). It provides complete task management features, including sorting, filtering, deadline alerts, undo/redo, and password protection.
+
+---
+
+## Design Highlight: Pointer-Based Architecture
+
+This project was intentionally written with **raw pointers (`string*`, `int*`, `bool*`)** to deepen understanding of C++ memory management and object-oriented design. All class attributes, constructors, destructors, getters/setters, and internal logic use explicit pointer allocation and deallocation (`new` / `delete`).
+
+This design choice emphasizes:
+
+* Manual memory allocation and deallocation
+* Deep copy semantics (copy constructors and `clone()` methods)
+* Destructor correctness and pointer safety
+* Explicit ownership and lifetime management
+
+> ⚠️ *This is for educational purposes. In real-world applications, smart pointers (e.g., `std::unique_ptr`) or STL containers would be preferred.*
 
 ---
 
@@ -14,6 +29,7 @@ A terminal-based to-do list application implemented in **C++17** for NYCU’s Ob
 | Importance Display  | Represent task importance with 1–5 stars                                            |
 | Undo / Redo         | Maintain two-layer snapshots for undo and redo operations                           |
 | Password Protection | Require password setup on first run and verification on subsequent runs             |
+| Pointer-Based OOP   | All class member variables and logic are implemented using raw pointers             |
 
 ---
 
